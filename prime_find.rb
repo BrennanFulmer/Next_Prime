@@ -4,7 +4,7 @@ require 'prime'
 def next_prime(starting_prime_number)
 # since Prime is enumerable it can generate endless primes
   Prime.detect{ |prime_number|
-    starting_prime_number < prime_number
+    prime_number > starting_prime_number
   }
 end
 
